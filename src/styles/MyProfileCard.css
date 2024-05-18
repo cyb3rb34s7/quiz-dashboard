@@ -1,0 +1,19 @@
+.my-profile-card .card-logo .dropdown-menu {
+    position: absolute;
+    top: 10%;
+    left: 5.1rem;
+}
+
+.my-profile-card .card-logo .dropdown-menu .dropdown-menu-item:hover,
+.my-profile-card .card-logo .dropdown-menu .dropdown-menu-item:active {
+    background-color: var(--tertiary-text-color);
+}
+
+.my-profile-card .logo-icon-container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}

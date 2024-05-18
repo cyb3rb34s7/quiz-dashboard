@@ -1,0 +1,8 @@
+.ant-result {
+    margin: auto;
+}
+
+.ant-result .ant-result-title,
+.ant-result .ant-result-subtitle {
+    color: var(--text-primary);
+}

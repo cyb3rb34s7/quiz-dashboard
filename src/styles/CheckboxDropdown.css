@@ -1,0 +1,18 @@
+.checkbox-dropdown-container svg {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.8rem;
+}
+
+.checkbox-dropdown-container .dropdown-menu {
+    position: absolute;
+    top: 105%;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.checkbox-dropdown-container .dropdown-menu .dropdown-menu-item:hover,
+.checkbox-dropdown-container .dropdown-menu .dropdown-menu-item:active {
+    background-color: var(--tertiary-text-color);
+}

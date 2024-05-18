@@ -1,0 +1,12 @@
+.dashboard .performance-card label {
+    width: 25%;
+}
+
+.dashboard .performance-card .progress-container,
+.dashboard .performance-card .bar-container {
+    flex-grow: 1;
+}
+
+.dashboard .performance-card .performance-value {
+    color: var(--gradient-end-color);
+}

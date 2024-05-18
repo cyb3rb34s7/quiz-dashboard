@@ -1,0 +1,49 @@
+.ant-picker {
+    height: 2.5rem;
+}
+
+.ant-picker:hover,
+.ant-picker-focused {
+  border-inline-end-width: 1px;
+}
+
+.anticon-close-circle svg {
+    fill: var(--secondary-text-color);
+}
+
+.ant-btn {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  transition: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: small;
+  text-decoration: none;
+  cursor: pointer;
+  height: 2.5rem;
+  padding: 0 1rem;
+  background: transparent linear-gradient(180deg, var(--gradient-start-color) 0%, var(--gradient-end-color) 100%) 0% 0% no-repeat;
+  border-radius: 5px;
+}
+
+.ant-btn > span {
+  color: var(--quaternary-text-color);
+}
+
+.ant-btn:disabled > span {
+  color: var(--primary-text-color);
+}
+
+.ant-btn:hover,
+.ant-btn:active {
+  background: var(--gradient-end-color);
+  transform: scale(0.95);
+}
+
+.ant-btn:disabled {
+  cursor: not-allowed;
+  background: var(--tertiary-text-color);
+}

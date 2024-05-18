@@ -1,0 +1,41 @@
+.leaderboard-card .card-body {
+    width: 100%;
+    overflow: auto;
+}
+
+.leaderboard-card table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+}
+
+.leaderboard-card .leaderboard-body-element>td {
+    color: var(--quaternary-text-color);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.leaderboard-card .leaderboard-body-element>td:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.leaderboard-card .leaderboard-body-element>td:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.leaderboard-card .student-image {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    /* vertical-align: middle; */
+}
+
+.leaderboard-card .student-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,12 @@
+.logo-icon-container {
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    background: transparent linear-gradient(225deg, var(--gradient-start-color) 0%, var(--gradient-end-color) 100%) 0% 0% no-repeat;
+    
+}
+
+.logo-icon-container .logo-icon {
+    border: 1px solid var(--quaternary-text-color);
+   object-fit: cover;
+}

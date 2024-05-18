@@ -1,0 +1,14 @@
+.file-upload-comp svg,
+.file-upload-comp .filename-container {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.file-upload-comp .filename-container {
+    border: 1px solid var(--tertiary-text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

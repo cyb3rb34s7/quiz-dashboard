@@ -1,0 +1,79 @@
+.p-datepicker-inline {
+    margin-top: 0.5rem;
+    width: 100% !important;
+}
+
+.p-datepicker-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--tertiary-text-color);
+}
+
+.p-datepicker-header > button,
+.p-datepicker-header .p-datepicker-title > button,
+.p-datepicker-header .p-datepicker-title .p-datepicker-decade {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.p-datepicker-header .p-datepicker-title {
+    text-align: center;
+}
+
+.p-datepicker-header > button,
+.p-datepicker-header .p-datepicker-title > button,
+.p-datepicker-header .p-datepicker-title .p-datepicker-decade,
+.p-datepicker-inline td > span > span {
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.p-datepicker-header .p-datepicker-title .p-datepicker-decade {
+    display: block;
+}
+
+.p-datepicker-calendar-container {
+    overflow-x: auto;
+}
+
+.p-datepicker-calendar-container > table {
+    width: 100%;
+}
+
+.p-datepicker-calendar-container > table thead tr th {
+    padding: 0.5rem 0;
+}
+
+.p-datepicker-inline td > span > span {
+    display: block;
+    cursor: default;
+}
+
+.p-monthpicker,
+.p-yearpicker {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.p-monthpicker-month,
+.p-yearpicker-year {
+    padding: 0.5rem 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.p-datepicker-header > button:hover,
+.p-datepicker-header > button:active,
+.p-datepicker-header .p-datepicker-title > button:hover,
+.p-datepicker-header .p-datepicker-title > button:active,
+.p-datepicker-header .p-datepicker-title .p-datepicker-decade:hover,
+.p-datepicker-header .p-datepicker-title .p-datepicker-decade:active,
+.p-monthpicker-month:hover,
+.p-monthpicker-month:active,
+.p-yearpicker-year:hover,
+.p-yearpicker-year:active {
+    cursor: pointer;
+    background-color: var(--hover-background-color);
+}

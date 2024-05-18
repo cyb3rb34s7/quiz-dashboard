@@ -1,0 +1,16 @@
+.overview-card:hover,
+.overview-card:active {
+    -webkit-box-shadow:inset 0px 0px 0px 1px var(--gradient-start-color);
+    -moz-box-shadow:inset 0px 0px 0px 1px var(--gradient-start-color);
+    -o-box-shadow:inset 0px 0px 0px 1px var(--gradient-start-color);
+    box-shadow:inset 0px 0px 0px 1px var(--gradient-start-color);
+    transform: scale(0.98);
+}
+
+.card-item-value {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

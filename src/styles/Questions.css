@@ -1,0 +1,11 @@
+.questions .options-container-outer {
+    flex-wrap: wrap;
+}
+
+.questions .options-container-outer .option-container-inner {
+    width: 24%;
+}
+
+.questions .options-container-outer .option-add-icon {
+    justify-self: flex-end;
+}

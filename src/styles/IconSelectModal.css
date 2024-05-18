@@ -1,0 +1,4 @@
+#icon-select-modal .logo-icon-container:hover,
+#icon-select-modal .logo-icon-container:active {
+  transform: scale(1.05);
+}

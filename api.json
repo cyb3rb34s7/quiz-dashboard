@@ -1,0 +1,2068 @@
+{
+  "get-dashboard-data": {
+    "totalStudents": {
+      "CS EET": 0,
+      "CS Executive": 0,
+      "CS Professional": 0
+    },
+    "averagePerformance": {
+      "Yes Academy": {
+        "averageScore": 0,
+        "percentage": 50
+      },
+      "Others": {
+        "averageScore": 0,
+        "percentage": 40
+      }
+    },
+    "cutOffsCleared": {
+      "CS EET": 0,
+      "CS Executive": 0,
+      "CS Professional": 0
+    },
+    "subjectPerformance": {
+      "CS EET": {
+        "businessCommunication": 75,
+        "legalAptitudeAndLogicalReasoning": 25,
+        "economicsAndBusinessEnvironment": 50,
+        "currentAffairs": 40
+      },
+      "CS Executive": {
+        "companyLaw": 10,
+        "costAndManagementAccounting": 20,
+        "economicAndCommercialLaws": 30,
+        "taxLawsAndPractice": 50,
+        "companyAccountsAndAuditingPractices": 60,
+        "capitalMarketsAndSecuritiesLaws": 70,
+        "industrialLabourAndGeneralLaws": 80,
+        "financialAndStrategicManagement": 90
+      },
+      "CS Professional": {
+        "advancedTaxLaws": 41,
+        "draftingAppearancesAndPleadings": 70,
+        "ethicsGovernanceAndSustainability": 80,
+
+        "resolutionOfCorporateDisputes": 90,
+        "corporateRestructuringAndInsolvency": 60,
+        "secretarialAuditComplianceManagementAndDueDiligence": 50,
+
+        "multidisciplinaryCaseStudies": 25,
+        "corporateFundingAndListingInStockExchanges": 10,
+        "electiveSubjects": 43
+      }
+    },
+    "quizPerformances": {
+      "Quiz 1": {
+        "Teacher 1": 45,
+        "Teacher 2": 78,
+        "Teacher 3": 95
+      },
+      "Quiz 2": {
+        "Teacher 1": 41,
+        "Teacher 2": 84,
+        "Teacher 3": 45
+      },
+      "Quiz 3": {
+        "Teacher 1": 56,
+        "Teacher 2": 98,
+        "Teacher 3": 67
+      },
+      "Quiz 4": {
+        "Teacher 1": 47,
+        "Teacher 2": 90,
+        "Teacher 3": 76
+      },
+      "Quiz 5": {
+        "Teacher 1": 77,
+        "Teacher 2": 84,
+        "Teacher 3": 92
+      }
+    },
+    "upcomingQuizzes": [
+      "26/8/2023",
+      "27/8/2023",
+      "22/8/2023",
+      "1/9/2023",
+      "31/7/2023"
+    ],
+    "leaderboard": {
+      "CS EET": [
+        {
+          "rank": 1,
+          "name": "Student 1",
+          "score": 100,
+          "academy": "Yes Academy"
+        },
+        {
+          "rank": 2,
+          "name": "Student 2",
+          "score": 90,
+          "academy": "Yes Academy"
+        },
+        {
+          "rank": 3,
+          "name": "Student 3",
+          "score": 80,
+          "academy": "Other"
+        }
+      ],
+      "CS Executive": [
+        {
+          "rank": 1,
+          "name": "Student 1",
+          "score": 100,
+          "academy": "Yes Academy"
+        },
+        {
+          "rank": 2,
+          "name": "Student 2",
+          "score": 90,
+          "academy": "Yes Academy"
+        },
+        {
+          "rank": 3,
+          "name": "Student 3",
+          "score": 80,
+          "academy": "Other"
+        }
+      ],
+      "CS Professional": [
+        {
+          "rank": 1,
+          "name": "Student 1",
+          "score": 80000,
+          "academy": "Yes Academy"
+        },
+        {
+          "rank": 2,
+          "name": "Student 2",
+          "score": 90,
+          "academy": "Yes Academy"
+        },
+        {
+          "rank": 3,
+          "name": "Student 3 cdcec decjdec  nnk",
+          "score": 80000,
+          "academy": "Other"
+        }
+      ]
+    }
+  },
+  "post-quiz/get-quiz": {
+    "quizID": "1",
+    "Name": "Quiz 1",
+    "Type": "Live",
+    "quizStartDate": "26/08/2023",
+    "quizStartTime": "10:00",
+    "quizDuration": "01:00",
+    "quizEndDate": "26/08/2023",
+    "quizEndTime": "11:00",
+    "Subject": "CS EET",
+    "quizIcon": "globe",
+    "quiz": {
+      "Business Communication": [
+        {
+          "question": "Question 1",
+          "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+          "answer": "Option 1"
+        },
+        {
+          "question": "Question 2",
+          "options": [
+            "Option 1",
+            "Option 2",
+            "Option 3",
+            "Option 4",
+            "Option 5"
+          ],
+          "answer": "Option 2"
+        },
+        {
+          "question": "Question 3",
+          "options": ["Option 1", "Option 2", "Option 3"],
+          "answer": "Option 3"
+        }
+      ],
+      "Current Affairs": [
+        {
+          "question": "Question 1",
+          "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+          "answer": "Option 1"
+        },
+        {
+          "question": "Question 2",
+          "options": [
+            "Option 1",
+            "Option 2",
+            "Option 3",
+            "Option 4",
+            "Option 5"
+          ],
+          "answer": "Option 2"
+        },
+        {
+          "question": "Question 3",
+          "options": ["Option 1", "Option 2", "Option 3"],
+          "answer": "Option 3"
+        }
+      ],
+      "Legal Aptitude": [
+        {
+          "question": "Question 1",
+          "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+          "answer": "Option 1"
+        },
+        {
+          "question": "Question 2",
+          "options": [
+            "Option 1",
+            "Option 2",
+            "Option 3",
+            "Option 4",
+            "Option 5"
+          ],
+          "answer": "Option 2"
+        },
+        {
+          "question": "Question 3",
+          "options": ["Option 1", "Option 2", "Option 3"],
+          "answer": "Option 3"
+        }
+      ],
+      "Logical Reasoning": [
+        {
+          "question": "Question 1",
+          "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+          "answer": "Option 1"
+        },
+        {
+          "question": "Question 2",
+          "options": [
+            "Option 1",
+            "Option 2",
+            "Option 3",
+            "Option 4",
+            "Option 5"
+          ],
+          "answer": "Option 2"
+        },
+        {
+          "question": "Question 3",
+          "options": ["Option 1", "Option 2", "Option 3"],
+          "answer": "Option 3"
+        }
+      ],
+      "Economics": [
+        {
+          "question": "Question 1",
+          "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+          "answer": "Option 1"
+        },
+        {
+          "question": "Question 2",
+          "options": [
+            "Option 1",
+            "Option 2",
+            "Option 3",
+            "Option 4",
+            "Option 5"
+          ],
+          "answer": "Option 2"
+        },
+        {
+          "question": "Question 3",
+          "options": ["Option 1", "Option 2", "Option 3"],
+          "answer": "Option 3"
+        }
+      ],
+      "Business Environment": [
+        {
+          "question": "Question 1",
+          "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+          "answer": "Option 1"
+        },
+        {
+          "question": "Question 2",
+          "options": [
+            "Option 1",
+            "Option 2",
+            "Option 3",
+            "Option 4",
+            "Option 5"
+          ],
+          "answer": "Option 2"
+        },
+        {
+          "question": "Question 3",
+          "options": ["Option 1", "Option 2", "Option 3"],
+          "answer": "Option 3"
+        }
+      ]
+    }
+  },
+  "get-quizzes(query-string-will-have-date-filters)": [
+    {
+      "quizID": "1",
+      "Name": "Quiz 1",
+      "Type": "Live",
+      "quizStartDate": "26/08/2023",
+      "quizStartTime": "10:00",
+      "quizDuration": "01:00",
+      "quizEndDate": "26/08/2023",
+      "quizEndTime": "11:00",
+      "Subject": "CS EET",
+      "quizIcon": "biotech",
+      "quiz": {
+        "Business Communication": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Current Affairs": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Legal Aptitude": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Logical Reasoning": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Economics": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Business Environment": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ]
+      }
+    },
+    {
+      "quizID": "2",
+      "Name": "Quiz 2",
+      "Type": "Practice",
+      "quizStartDate": "26/08/2023",
+      "quizStartTime": "10:00",
+      "quizDuration": "01:00",
+      "quizEndDate": "26/08/2023",
+      "quizEndTime": "11:00",
+      "Subject": "CS EET",
+      "quizIcon": "psychology",
+      "quiz": {
+        "Business Communication": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Current Affairs": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Legal Aptitude": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Logical Reasoning": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Economics": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Business Environment": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ]
+      }
+    },
+    {
+      "quizID": "3",
+      "Name": "Quiz 3",
+      "Type": "Live",
+      "quizStartDate": "26/08/2023",
+      "quizStartTime": "10:00",
+      "quizDuration": "01:00",
+      "quizEndDate": "26/08/2023",
+      "quizEndTime": "11:00",
+      "Subject": "CS EET",
+      "quizIcon": "school",
+      "quiz": {
+        "Business Communication": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Current Affairs": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Legal Aptitude": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Logical Reasoning": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Economics": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Business Environment": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ]
+      }
+    },
+    {
+      "quizID": "4",
+      "Name": "Quiz 4",
+      "Type": "Practice",
+      "quizStartDate": "26/08/2023",
+      "quizStartTime": "10:00",
+      "quizDuration": "01:00",
+      "quizEndDate": "26/08/2023",
+      "quizEndTime": "11:00",
+      "Subject": "CS EET",
+      "quizIcon": "genetics",
+      "quiz": {
+        "Business Communication": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Current Affairs": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Legal Aptitude": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Logical Reasoning": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Economics": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Business Environment": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ]
+      }
+    },
+    {
+      "quizID": "5",
+      "Name": "Quiz 5",
+      "Type": "Practice",
+      "quizStartDate": "26/08/2023",
+      "quizStartTime": "10:00",
+      "quizDuration": "01:00",
+      "quizEndDate": "26/08/2023",
+      "quizEndTime": "11:00",
+      "Subject": "CS EET",
+      "quizIcon": "globe",
+      "quiz": {
+        "Business Communication": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Current Affairs": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Legal Aptitude": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Logical Reasoning": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Economics": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Business Environment": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ]
+      }
+    },
+    {
+      "quizID": "6",
+      "Name": "Quiz 6",
+      "Type": "Practice",
+      "quizStartDate": "26/08/2023",
+      "quizStartTime": "10:00",
+      "quizDuration": "01:00",
+      "quizEndDate": "26/08/2023",
+      "quizEndTime": "11:00",
+      "Subject": "CS EET",
+      "quizIcon": "science",
+      "quiz": {
+        "Business Communication": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Current Affairs": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Legal Aptitude": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Logical Reasoning": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Economics": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ],
+        "Business Environment": [
+          {
+            "question": "Question 1",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": "Option 1"
+          },
+          {
+            "question": "Question 2",
+            "options": [
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5"
+            ],
+            "answer": "Option 2"
+          },
+          {
+            "question": "Question 3",
+            "options": ["Option 1", "Option 2", "Option 3"],
+            "answer": "Option 3"
+          }
+        ]
+      }
+    }
+  ],
+  "get-teachers/post-teachers": [
+    {
+      "id": "1",
+      "Name": "ABC",
+      "Email": "abc@abc.abc",
+      "Phone": "1234567890",
+      "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg",
+      "Subjects": {
+        "CS EET": [
+          "businessCommunication",
+          "legalAptitudeAndLogicalReasoning",
+          "economicsAndBusinessEnvironment",
+          "currentAffairs"
+        ],
+        "CS Executive": [
+          "companyLaw",
+          "costAndManagementAccounting",
+          "economicAndCommercialLaws",
+          "taxLawsAndPractice",
+          "companyAccountsAndAuditingPractices",
+          "capitalMarketsAndSecuritiesLaws",
+          "industrialLabourAndGeneralLaws",
+          "financialAndStrategicManagement"
+        ]
+      },
+      "Subject-wise Performance": {
+        "companyLaw": 60,
+        "costAndManagementAccounting": 60,
+        "economicAndCommercialLaws": 60,
+        "taxLawsAndPractice": 60,
+        "companyAccountsAndAuditingPractices": 60,
+        "capitalMarketsAndSecuritiesLaws": 60,
+        "industrialLabourAndGeneralLaws": 60,
+        "financialAndStrategicManagement": 60
+      },
+      "Last Five Quiz Performances of Students": {
+        "Quiz 1": 60,
+        "Quiz 2": 60,
+        "Quiz 3": 60,
+        "Quiz 4": 60,
+        "Quiz 5": 60
+      },
+      "students": [
+        {
+          "id": 1,
+          "Name": "Student 1",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 1500,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        },
+        {
+          "id": 2,
+          "Name": "Student 2",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 1400,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        },
+        {
+          "id": 3,
+          "Name": "Student 3",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 4200,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "Name": "DEF",
+      "Email": "abc@abc.abc",
+      "Phone": "1234567890",
+      "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg",
+      "Subjects": {
+        "CS EET": [
+          "businessCommunication",
+          "legalAptitudeAndLogicalReasoning",
+          "economicsAndBusinessEnvironment",
+          "currentAffairs"
+        ],
+        "CS Executive": [
+          "companyLaw",
+          "costAndManagementAccounting",
+          "economicAndCommercialLaws",
+          "taxLawsAndPractice",
+          "companyAccountsAndAuditingPractices",
+          "capitalMarketsAndSecuritiesLaws",
+          "industrialLabourAndGeneralLaws",
+          "financialAndStrategicManagement"
+        ]
+      },
+      "Subject-wise Performance": {
+        "companyLaw": 0,
+        "costAndManagementAccounting": 0,
+        "economicAndCommercialLaws": 0,
+        "taxLawsAndPractice": 0,
+        "companyAccountsAndAuditingPractices": 0,
+        "capitalMarketsAndSecuritiesLaws": 0,
+        "industrialLabourAndGeneralLaws": 0,
+        "financialAndStrategicManagement": 0
+      },
+      "Last Five Quiz Performances of Students": {
+        "Quiz 1": 0,
+        "Quiz 2": 0,
+        "Quiz 3": 0,
+        "Quiz 4": 0,
+        "Quiz 5": 0
+      },
+      "students": [
+        {
+          "id": 1,
+          "Name": "Student 1",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 1500,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        },
+        {
+          "id": 2,
+          "Name": "Student 2",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 1400,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        },
+        {
+          "id": 3,
+          "Name": "Student 3",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 4200,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "Name": "ABC",
+      "Email": "abc@abc.abc",
+      "Phone": "1234567890",
+      "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg",
+      "Subjects": {
+        "CS EET": [
+          "businessCommunication",
+          "legalAptitudeAndLogicalReasoning",
+          "economicsAndBusinessEnvironment",
+          "currentAffairs"
+        ],
+        "CS Executive": [
+          "companyLaw",
+          "costAndManagementAccounting",
+          "economicAndCommercialLaws",
+          "taxLawsAndPractice",
+          "companyAccountsAndAuditingPractices",
+          "capitalMarketsAndSecuritiesLaws",
+          "industrialLabourAndGeneralLaws",
+          "financialAndStrategicManagement"
+        ]
+      },
+      "Subject-wise Performance": {
+        "companyLaw": 0,
+        "costAndManagementAccounting": 0,
+        "economicAndCommercialLaws": 0,
+        "taxLawsAndPractice": 0,
+        "companyAccountsAndAuditingPractices": 0,
+        "capitalMarketsAndSecuritiesLaws": 0,
+        "industrialLabourAndGeneralLaws": 0,
+        "financialAndStrategicManagement": 0
+      },
+      "Last Five Quiz Performances of Students": {
+        "Quiz 1": 0,
+        "Quiz 2": 0,
+        "Quiz 3": 0,
+        "Quiz 4": 0,
+        "Quiz 5": 0
+      },
+      "students": [
+        {
+          "id": 1,
+          "Name": "Student 1",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 1500,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        },
+        {
+          "id": 2,
+          "Name": "Student 2",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 1400,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        },
+        {
+          "id": 3,
+          "Name": "Student 3",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 4200,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "Name": "ABC",
+      "Email": "abc@abc.abc",
+      "Phone": "1234567890",
+      "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg",
+      "Subjects": {
+        "CS EET": [
+          "businessCommunication",
+          "legalAptitudeAndLogicalReasoning",
+          "economicsAndBusinessEnvironment",
+          "currentAffairs"
+        ],
+        "CS Executive": [
+          "companyLaw",
+          "costAndManagementAccounting",
+          "economicAndCommercialLaws",
+          "taxLawsAndPractice",
+          "companyAccountsAndAuditingPractices",
+          "capitalMarketsAndSecuritiesLaws",
+          "industrialLabourAndGeneralLaws",
+          "financialAndStrategicManagement"
+        ]
+      },
+      "Subject-wise Performance": {
+        "companyLaw": 0,
+        "costAndManagementAccounting": 0,
+        "economicAndCommercialLaws": 0,
+        "taxLawsAndPractice": 0,
+        "companyAccountsAndAuditingPractices": 0,
+        "capitalMarketsAndSecuritiesLaws": 0,
+        "industrialLabourAndGeneralLaws": 0,
+        "financialAndStrategicManagement": 0
+      },
+      "Last Five Quiz Performances of Students": {
+        "Quiz 1": 0,
+        "Quiz 2": 0,
+        "Quiz 3": 0,
+        "Quiz 4": 0,
+        "Quiz 5": 0
+      },
+      "students": [
+        {
+          "id": 1,
+          "Name": "Student 1",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 1500,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        },
+        {
+          "id": 2,
+          "Name": "Student 2",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 1400,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        },
+        {
+          "id": 3,
+          "Name": "Student 3",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 4200,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "Name": "ABC",
+      "Email": "abc@abc.abc",
+      "Phone": "1234567890",
+      "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg",
+      "Subjects": {
+        "CS EET": [
+          "businessCommunication",
+          "legalAptitudeAndLogicalReasoning",
+          "economicsAndBusinessEnvironment",
+          "currentAffairs"
+        ],
+        "CS Executive": [
+          "companyLaw",
+          "costAndManagementAccounting",
+          "economicAndCommercialLaws",
+          "taxLawsAndPractice",
+          "companyAccountsAndAuditingPractices",
+          "capitalMarketsAndSecuritiesLaws",
+          "industrialLabourAndGeneralLaws",
+          "financialAndStrategicManagement"
+        ]
+      },
+      "Subject-wise Performance": {
+        "companyLaw": 0,
+        "costAndManagementAccounting": 0,
+        "economicAndCommercialLaws": 0,
+        "taxLawsAndPractice": 0,
+        "companyAccountsAndAuditingPractices": 0,
+        "capitalMarketsAndSecuritiesLaws": 0,
+        "industrialLabourAndGeneralLaws": 0,
+        "financialAndStrategicManagement": 0
+      },
+      "Last Five Quiz Performances of Students": {
+        "Quiz 1": 0,
+        "Quiz 2": 0,
+        "Quiz 3": 0,
+        "Quiz 4": 0,
+        "Quiz 5": 0
+      },
+      "students": [
+        {
+          "id": 1,
+          "Name": "Student 1",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 1500,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        },
+        {
+          "id": 2,
+          "Name": "Student 2",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 1400,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        },
+        {
+          "id": 3,
+          "Name": "Student 3",
+          "Subjects": ["businessCommunication", "currentAffairs"],
+          "Total Score": 4200,
+          "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+        }
+      ]
+    }
+  ],
+  "get-students/post-students": [
+    {
+      "id": "1",
+      "teachers": {
+        "1": ["businessCommunication"],
+        "2": ["legalAptitudeAndLogicalReasoning"],
+        "3": ["economicsAndBusinessEnvironment"],
+        "4": ["currentAffairs"]
+      },
+      "Name": "ABC",
+      "Email": "abc@abc.abc",
+      "Phone": "1234567890",
+      "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg",
+      "Academy": "Yes Academy",
+      "Quizzes": [
+        {
+          "quizID": "1",
+          "Name": "Quiz 1",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "globe"
+        },
+        {
+          "quizID": "2",
+          "Name": "Quiz 2",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "psychology"
+        }
+      ],
+      "Total Score": 1500,
+      "Subjects": {
+        "CS EET": [
+          "businessCommunication",
+          "legalAptitudeAndLogicalReasoning",
+          "economicsAndBusinessEnvironment",
+          "currentAffairs"
+        ],
+        "CS Executive": [
+          "companyLaw",
+          "costAndManagementAccounting",
+          "economicAndCommercialLaws",
+          "taxLawsAndPractice",
+          "companyAccountsAndAuditingPractices",
+          "capitalMarketsAndSecuritiesLaws",
+          "industrialLabourAndGeneralLaws",
+          "financialAndStrategicManagement"
+        ]
+      },
+      "Last Five Quiz Scores": {
+        "Quiz 1": 90,
+        "Quiz 2": 100,
+        "Quiz 3": 80,
+        "Quiz 4": 60,
+        "Quiz 5": 40
+      },
+      "Subject-wise Performance": {
+        "CS EET": {
+          "businessCommunication": 70,
+          "legalAptitudeAndLogicalReasoning": 70,
+          "economicsAndBusinessEnvironment": 70,
+          "currentAffairs": 70
+        },
+        "CS Executive": {
+          "companyLaw": 80,
+          "costAndManagementAccounting": 80,
+          "economicAndCommercialLaws": 80,
+          "taxLawsAndPractice": 80,
+          "companyAccountsAndAuditingPractices": 80,
+          "capitalMarketsAndSecuritiesLaws": 80,
+          "industrialLabourAndGeneralLaws": 80,
+          "financialAndStrategicManagement": 80
+        }
+      }
+    },
+    {
+      "id": "2",
+      "teachers": {
+        "1": ["businessCommunication"],
+        "2": ["legalAptitudeAndLogicalReasoning"],
+        "3": ["economicsAndBusinessEnvironment"],
+        "4": ["currentAffairs"]
+      },
+      "Name": "DEF",
+      "Email": "def@def.com",
+      "Phone": "1234567890",
+      "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg",
+      "Academy": "Other",
+      "Quizzes": [
+        {
+          "quizID": "1",
+          "Name": "Quiz 1",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "globe"
+        },
+        {
+          "quizID": "2",
+          "Name": "Quiz 2",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "psychology"
+        },
+        {
+          "quizID": "3",
+          "Name": "Quiz 3",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "school"
+        },
+        {
+          "quizID": "4",
+          "Name": "Quiz 4",
+          "Subject": "CS Executive",
+          "Score": 80,
+          "quizIcon": "genetics"
+        },
+        {
+          "quizID": "5",
+          "Name": "Quiz 5",
+          "Subject": "CS Executive",
+          "Score": 80,
+          "quizIcon": "science"
+        }
+      ],
+      "Total Score": 1500,
+      "Subjects": {
+        "CS EET": [
+          "businessCommunication",
+          "legalAptitudeAndLogicalReasoning",
+          "economicsAndBusinessEnvironment",
+          "currentAffairs"
+        ],
+        "CS Executive": [
+          "companyLaw",
+          "costAndManagementAccounting",
+          "economicAndCommercialLaws",
+          "taxLawsAndPractice",
+          "companyAccountsAndAuditingPractices",
+          "capitalMarketsAndSecuritiesLaws",
+          "industrialLabourAndGeneralLaws",
+          "financialAndStrategicManagement"
+        ]
+      },
+      "Last Five Quiz Scores": {
+        "Quiz 1": 120,
+        "Quiz 2": 100,
+        "Quiz 3": 80,
+        "Quiz 4": 60,
+        "Quiz 5": 40
+      },
+      "Subject-wise Performance": {
+        "CS EET": {
+          "businessCommunication": 70,
+          "legalAptitudeAndLogicalReasoning": 70,
+          "economicsAndBusinessEnvironment": 70,
+          "currentAffairs": 70
+        },
+        "CS Executive": {
+          "companyLaw": 80,
+          "costAndManagementAccounting": 80,
+          "economicAndCommercialLaws": 80,
+          "taxLawsAndPractice": 80,
+          "companyAccountsAndAuditingPractices": 80,
+          "capitalMarketsAndSecuritiesLaws": 80,
+          "industrialLabourAndGeneralLaws": 80,
+          "financialAndStrategicManagement": 80
+        }
+      }
+    },
+    {
+      "id": "3",
+      "teachers": {
+        "1": ["businessCommunication"],
+        "2": ["legalAptitudeAndLogicalReasoning"],
+        "3": ["economicsAndBusinessEnvironment"],
+        "4": ["currentAffairs"]
+      },
+      "Name": "GHI",
+      "Email": "ghi@ghi.com",
+      "Phone": "1234567890",
+      "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg",
+      "Academy": "Yes Academy",
+      "Quizzes": [
+        {
+          "quizID": "1",
+          "Name": "Quiz 1",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "globe"
+        },
+        {
+          "quizID": "2",
+          "Name": "Quiz 2",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "psychology"
+        },
+        {
+          "quizID": "3",
+          "Name": "Quiz 3",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "school"
+        },
+        {
+          "quizID": "4",
+          "Name": "Quiz 4",
+          "Subject": "CS Executive",
+          "Score": 80,
+          "quizIcon": "genetics"
+        },
+        {
+          "quizID": "5",
+          "Name": "Quiz 5",
+          "Subject": "CS Executive",
+          "Score": 80,
+          "quizIcon": "science"
+        }
+      ],
+      "Total Score": 1500,
+      "Subjects": {
+        "CS EET": [
+          "businessCommunication",
+          "legalAptitudeAndLogicalReasoning",
+          "economicsAndBusinessEnvironment",
+          "currentAffairs"
+        ],
+        "CS Executive": [
+          "companyLaw",
+          "costAndManagementAccounting",
+          "economicAndCommercialLaws",
+          "taxLawsAndPractice",
+          "companyAccountsAndAuditingPractices",
+          "capitalMarketsAndSecuritiesLaws",
+          "industrialLabourAndGeneralLaws",
+          "financialAndStrategicManagement"
+        ]
+      },
+      "Last Five Quiz Scores": {
+        "Quiz 1": 120,
+        "Quiz 2": 100,
+        "Quiz 3": 80,
+        "Quiz 4": 60,
+        "Quiz 5": 40
+      },
+      "Subject-wise Performance": {
+        "CS EET": {
+          "businessCommunication": 70,
+          "legalAptitudeAndLogicalReasoning": 70,
+          "economicsAndBusinessEnvironment": 70,
+          "currentAffairs": 70
+        },
+        "CS Executive": {
+          "companyLaw": 80,
+          "costAndManagementAccounting": 80,
+          "economicAndCommercialLaws": 80,
+          "taxLawsAndPractice": 80,
+          "companyAccountsAndAuditingPractices": 80,
+          "capitalMarketsAndSecuritiesLaws": 80,
+          "industrialLabourAndGeneralLaws": 80,
+          "financialAndStrategicManagement": 80
+        }
+      }
+    }
+  ],
+  "get-recent-students": [
+    {
+      "id": "1",
+      "teachers": {
+        "1": ["businessCommunication"],
+        "2": ["legalAptitudeAndLogicalReasoning"],
+        "3": ["economicsAndBusinessEnvironment"],
+        "4": ["currentAffairs"]
+      },
+      "Name": "ABC",
+      "Email": "abc@abc.abc",
+      "Phone": "1234567890",
+      "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg",
+      "Academy": "Yes Academy",
+      "Quizzes": [
+        {
+          "quizID": "1",
+          "Name": "Quiz 1",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "globe"
+        },
+        {
+          "quizID": "2",
+          "Name": "Quiz 2",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "psychology"
+        },
+        {
+          "quizID": "3",
+          "Name": "Quiz 3",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "school"
+        },
+        {
+          "quizID": "4",
+          "Name": "Quiz 4",
+          "Subject": "CS Executive",
+          "Score": 80,
+          "quizIcon": "genetics"
+        },
+        {
+          "quizID": "5",
+          "Name": "Quiz 5",
+          "Subject": "CS Executive",
+          "Score": 80,
+          "quizIcon": "science"
+        }
+      ],
+      "Total Score": 1500,
+      "Subjects": {
+        "CS EET": [
+          "businessCommunication",
+          "legalAptitudeAndLogicalReasoning",
+          "economicsAndBusinessEnvironment",
+          "currentAffairs"
+        ],
+        "CS Executive": [
+          "companyLaw",
+          "costAndManagementAccounting",
+          "economicAndCommercialLaws",
+          "taxLawsAndPractice",
+          "companyAccountsAndAuditingPractices",
+          "capitalMarketsAndSecuritiesLaws",
+          "industrialLabourAndGeneralLaws",
+          "financialAndStrategicManagement"
+        ]
+      },
+      "Last Five Quiz Scores": {
+        "Quiz 1": 120,
+        "Quiz 2": 100,
+        "Quiz 3": 80,
+        "Quiz 4": 60,
+        "Quiz 5": 40
+      },
+      "Subject-wise Performance": {
+        "CS EET": {
+          "businessCommunication": 70,
+          "legalAptitudeAndLogicalReasoning": 70,
+          "economicsAndBusinessEnvironment": 70,
+          "currentAffairs": 70
+        },
+        "CS Executive": {
+          "companyLaw": 80,
+          "costAndManagementAccounting": 80,
+          "economicAndCommercialLaws": 80,
+          "taxLawsAndPractice": 80,
+          "companyAccountsAndAuditingPractices": 80,
+          "capitalMarketsAndSecuritiesLaws": 80,
+          "industrialLabourAndGeneralLaws": 80,
+          "financialAndStrategicManagement": 80
+        }
+      }
+    },
+    {
+      "id": "2",
+      "teachers": {
+        "1": ["businessCommunication"],
+        "2": ["legalAptitudeAndLogicalReasoning"],
+        "3": ["economicsAndBusinessEnvironment"],
+        "4": ["currentAffairs"]
+      },
+      "Name": "DEF",
+      "Email": "def@def.com",
+      "Phone": "1234567890",
+      "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg",
+      "Academy": "Other",
+      "Quizzes": [
+        {
+          "quizID": "1",
+          "Name": "Quiz 1",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "globe"
+        },
+        {
+          "quizID": "2",
+          "Name": "Quiz 2",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "psychology"
+        },
+        {
+          "quizID": "3",
+          "Name": "Quiz 3",
+          "Subject": "CS EET",
+          "Score": 80,
+          "quizIcon": "school"
+        },
+        {
+          "quizID": "4",
+          "Name": "Quiz 4",
+          "Subject": "CS Executive",
+          "Score": 80,
+          "quizIcon": "genetics"
+        },
+        {
+          "quizID": "5",
+          "Name": "Quiz 5",
+          "Subject": "CS Executive",
+          "Score": 80,
+          "quizIcon": "science"
+        }
+      ],
+      "Total Score": 1500,
+      "Subjects": {
+        "CS EET": [
+          "businessCommunication",
+          "legalAptitudeAndLogicalReasoning",
+          "economicsAndBusinessEnvironment",
+          "currentAffairs"
+        ],
+        "CS Executive": [
+          "companyLaw",
+          "costAndManagementAccounting",
+          "economicAndCommercialLaws",
+          "taxLawsAndPractice",
+          "companyAccountsAndAuditingPractices",
+          "capitalMarketsAndSecuritiesLaws",
+          "industrialLabourAndGeneralLaws",
+          "financialAndStrategicManagement"
+        ]
+      },
+      "Last Five Quiz Scores": {
+        "Quiz 1": 120,
+        "Quiz 2": 100,
+        "Quiz 3": 80,
+        "Quiz 4": 60,
+        "Quiz 5": 40
+      },
+      "Subject-wise Performance": {
+        "CS EET": {
+          "businessCommunication": 70,
+          "legalAptitudeAndLogicalReasoning": 70,
+          "economicsAndBusinessEnvironment": 70,
+          "currentAffairs": 70
+        },
+        "CS Executive": {
+          "companyLaw": 80,
+          "costAndManagementAccounting": 80,
+          "economicAndCommercialLaws": 80,
+          "taxLawsAndPractice": 80,
+          "companyAccountsAndAuditingPractices": 80,
+          "capitalMarketsAndSecuritiesLaws": 80,
+          "industrialLabourAndGeneralLaws": 80,
+          "financialAndStrategicManagement": 80
+        }
+      }
+    }
+  ],
+  "me": {
+    "id": "1",
+    "first_name": "ABC",
+    "last_name": "DEF",
+    "Email": "abc@abc.abc",
+    "phone": "1234567890",
+    "profilePic": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+    "Subjects": {
+      "CS EET": [
+        "businessCommunication",
+        "legalAptitudeAndLogicalReasoning",
+        "economicsAndBusinessEnvironment",
+        "currentAffairs"
+      ],
+      "CS Executive": [
+        "companyLaw",
+        "costAndManagementAccounting",
+        "economicAndCommercialLaws",
+        "taxLawsAndPractice",
+        "companyAccountsAndAuditingPractices",
+        "capitalMarketsAndSecuritiesLaws",
+        "industrialLabourAndGeneralLaws",
+        "financialAndStrategicManagement"
+      ]
+    },
+    "Subject-wise Performance": {
+      "Company Law": 60,
+      "Cost & Management Accounting": 60,
+      "Economic & Commercial Laws": 60,
+      "Tax Laws & Practice": 60,
+      "Company Accounts & Auditing Practices": 60,
+      "Capital Market & Securities Laws": 60,
+      "Industrial Labor & General Laws": 60,
+      "Financial & Strategic Management": 60
+    },
+    "Last Five Quiz Performances of Students": {
+      "Quiz 1": 60,
+      "Quiz 2": 60,
+      "Quiz 3": 60,
+      "Quiz 4": 60,
+      "Quiz 5": 60
+    },
+    "students": [
+      {
+        "id": 1,
+        "Name": "Student 1",
+        "Subjects": ["businessCommunication", "currentAffairs"],
+        "Total Score": 1500,
+        "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+      },
+      {
+        "id": 2,
+        "Name": "Student 2",
+        "Subjects": ["businessCommunication", "currentAffairs"],
+        "Total Score": 1400,
+        "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+      },
+      {
+        "id": 3,
+        "Name": "Student 3",
+        "Subjects": ["businessCommunication", "currentAffairs"],
+        "Total Score": 4200,
+        "profilePic": "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+      }
+    ]
+  }
+}
