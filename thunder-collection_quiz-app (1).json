@@ -1,0 +1,1057 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "quiz-app",
+    "collectionId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+    "dateExported": "2024-05-12T09:10:43.831Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "e2c085f9-fe16-45ff-a3e5-2f90ba199c1e",
+            "name": "teachers",
+            "containerId": "",
+            "created": "2023-12-09T17:23:53.009Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "f16bccaa-9c39-4420-9daf-aceaea8692f0",
+            "name": "quiz",
+            "containerId": "",
+            "created": "2024-01-09T21:17:32.351Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "bf6cf915-4ccb-40df-9c4c-6b2e0d496d5b",
+            "name": "auth",
+            "containerId": "",
+            "created": "2024-02-17T11:54:36.737Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "98f15451-ce51-4a1a-8619-6b32385f5a8d",
+            "name": "students",
+            "containerId": "",
+            "created": "2024-03-02T10:48:53.715Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "c37a6132-1ef1-4c61-b690-a3da3abbb01e",
+            "name": "questions",
+            "containerId": "",
+            "created": "2024-03-17T15:30:31.086Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "91cbfde1-0a5c-4f6d-b1ab-37bf74b016e7",
+            "name": "metrics",
+            "containerId": "",
+            "created": "2024-03-20T18:21:51.618Z",
+            "sortNum": 70000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "a588f9bf-06dc-4f02-87e6-bd94d62434e8",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "e2c085f9-fe16-45ff-a3e5-2f90ba199c1e",
+            "name": "add teacher (only admin)",
+            "url": "http://127.0.0.1:8000/api/v1/teachers",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-29T20:18:35.994Z",
+            "modified": "2024-05-10T13:08:55.536Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"first_name\": \"Yash\",\n    \"last_name\": \"Singalkar\",\n    \"email\": \"abcd@gmail.com\",\n    \"phone\": \"8805684639\",\n    \"subjects\": {\n    \"CS EET\": [\n        \"Business Communication\",\n        \"Current Affairs\",\n        \"Legal Aptitude\",\n        \"Logical Reasoning\",\n        \"Economics\",\n        \"Business Environment\"\n    ]\n  }\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "c72d0305-009b-4ea9-8e2f-157c913ccc64",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "e2c085f9-fe16-45ff-a3e5-2f90ba199c1e",
+            "name": "get all teachers (only admin)",
+            "url": "http://127.0.0.1:8000/api/v1/teachers/all",
+            "method": "GET",
+            "sortNum": 12500,
+            "created": "2023-12-10T16:34:46.415Z",
+            "modified": "2024-05-10T13:04:22.656Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "b5c0ed32-654d-4699-95d9-562514c48ffa",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "e2c085f9-fe16-45ff-a3e5-2f90ba199c1e",
+            "name": "get teacher (only admin)",
+            "url": "http://127.0.0.1:8000/api/v1/teachers/65d3d3f9c41dcde0b47dd635",
+            "method": "GET",
+            "sortNum": 13750,
+            "created": "2023-12-10T17:09:05.761Z",
+            "modified": "2024-05-10T13:07:03.338Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "89bf7eec-ca83-48b2-9c4e-c8a7935d001b",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "e2c085f9-fe16-45ff-a3e5-2f90ba199c1e",
+            "name": "update subjects (only admin)",
+            "url": "http://127.0.0.1:8000/api/v1/teachers/65d3d3f9c41dcde0b47dd635",
+            "method": "PUT",
+            "sortNum": 14062.5,
+            "created": "2024-02-20T19:53:59.716Z",
+            "modified": "2024-05-10T13:10:38.928Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"subjects\": {\n    \"CS EET\": [\n        \"Business Communication\",\n        \"Current Affairs\",\n        \"Legal Aptitude\",\n        \"Logical Reasoning\",\n        \"Economics\",\n        \"Business Environment\"\n    ]\n  }\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "e45ca20f-b470-46c7-af1e-be3c5bb7f7ce",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "e2c085f9-fe16-45ff-a3e5-2f90ba199c1e",
+            "name": "get self profile",
+            "url": "http://127.0.0.1:8000/api/v1/teachers",
+            "method": "GET",
+            "sortNum": 14375,
+            "created": "2024-02-20T18:51:21.872Z",
+            "modified": "2024-05-10T13:11:49.353Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "c23ddd6b-cc11-4e40-b8f7-4780f7aaa99c",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "e2c085f9-fe16-45ff-a3e5-2f90ba199c1e",
+            "name": "update self profile",
+            "url": "http://127.0.0.1:8000/api/v1/teachers",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2023-12-10T17:34:09.793Z",
+            "modified": "2024-05-10T13:12:34.645Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"phone\": \"8459339227\",\n    \"subjects\": {\n    \"CS EET\": [\n        \"Business Communication\",\n        \"Current Affairs\",\n        \"Legal Aptitude\",\n        \"Logical Reasoning\",\n        \"Economics\",\n        \"Business Environment\"\n    ]\n  }\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "1badd732-d845-4134-a77f-1759946f032c",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "f16bccaa-9c39-4420-9daf-aceaea8692f0",
+            "name": "add quiz",
+            "url": "http://127.0.0.1:8000/api/v1/quiz",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-01-09T21:17:44.503Z",
+            "modified": "2024-05-10T21:36:13.698Z",
+            "headers": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Test Quiz 2"
+                    },
+                    {
+                        "name": "quiz",
+                        "value": "{ \"Business Communication\": [ { \"question\": \"Question 2\", \"options\": [ \"Option 1\", \"Option 2\", \"Option 3\", \"Option 4\", \"Option 5\" ], \"answer\": \"Option 2\" } ] }"
+                    },
+                    {
+                        "name": "type",
+                        "value": "Practice"
+                    },
+                    {
+                        "name": "programme",
+                        "value": "CS EET"
+                    },
+                    {
+                        "name": "start_time",
+                        "value": "2024-06-10 19:47:00+00:00"
+                    },
+                    {
+                        "name": "end_time",
+                        "value": "2024-05-25 04:53:00+00:00"
+                    },
+                    {
+                        "name": "icon",
+                        "value": "globe"
+                    },
+                    {
+                        "name": "draft",
+                        "value": "false"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "c:\\Users\\yashs\\Desktop\\Internship\\quiz-app-server\\CS_EET.xlsx"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "970089fc-99e6-4b0d-9988-0c2e4dc2151b",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "f16bccaa-9c39-4420-9daf-aceaea8692f0",
+            "name": "get quizzes",
+            "url": "http://127.0.0.1:8000/api/v1/quiz?submitted=true&type=Live",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-01-09T22:41:38.446Z",
+            "modified": "2024-05-11T01:05:37.224Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "submitted",
+                    "value": "true",
+                    "isPath": false
+                },
+                {
+                    "name": "from",
+                    "value": "2024-03-10T23:59:02.877Z",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "to",
+                    "value": "2024-03-11T23:59:02.877Z",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "programme",
+                    "value": "Law Entrance",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "type",
+                    "value": "Live",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "50",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "3540a3e0-39d9-4943-a44f-47bf7499c525",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "bf6cf915-4ccb-40df-9c4c-6b2e0d496d5b",
+            "name": "auth",
+            "url": "http://127.0.0.1:8000/api/v1/auth",
+            "method": "GET",
+            "sortNum": 55000,
+            "created": "2024-02-17T12:12:00.247Z",
+            "modified": "2024-05-10T16:34:25.003Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJjb2duaXRvOmdyb3VwcyI6WyJzdHVkZW50Il0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsImNvZ25pdG86dXNlcm5hbWUiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiI4MjkyM2ZhZi03YTZjLTRkYWUtODE2OS0xOTE1MzVjNmFjNDAiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiODZjMmUzOGItMDQzOS00ZThhLWE4NDMtNDEwMWQ0OWZiZmQyIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUxOTgwOTMsInBob25lX251bWJlciI6Iis5MTAwMDAwMDAwMDAiLCJleHAiOjE3MTU0NDUwNDUsImlhdCI6MTcxNTM1ODY0NSwiZmFtaWx5X25hbWUiOiJTdHVkZW50IiwianRpIjoiYjRlMmFlY2YtNDQyMC00M2E0LWFmNGEtNWE2YjViZDNlMDMyIiwiZW1haWwiOiJ5ZXNhY2FkdGVjaEBnbWFpbC5jb20ifQ.QjFSuzNbuv2NFWcE9xZKG6DCdaUBJ_pgfeOI_OV9A6EwvqUrwtrAjPBmG04MRHaZr3KgDkAzlDJ3oRo27O7_U1_lY__w1Z2ZnFjGtZSO0TP9xCUQADxdhhdMPOGQxuYUWnWmeGzuPx7RKo4KG2NFIzOiWBkAFFZlu66Rk2uoFx_a0iDZPBJ5RVyts1XcLx_P8NMrDVc16hU5HyneoLGO-x5sOhVvvoYUAzK3BR_fdt-sM4SIZ_8mugZ0lktKq3On5m_X4rmklfWlSF3fwQBwrPjgAUagl8t3G_2B4FXatdKOMl8dPN9z68H-pHj1tf44PvRHfHABWXpt2pAOqaXpEg"
+            }
+        },
+        {
+            "_id": "4c32e7c2-a5c3-45e4-842b-f62b75539f50",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "f16bccaa-9c39-4420-9daf-aceaea8692f0",
+            "name": "get upcoming quizzes",
+            "url": "http://127.0.0.1:8000/api/v1/quiz/upcoming?month=1&type=Practice&programme=CS EET",
+            "method": "GET",
+            "sortNum": 55000,
+            "created": "2024-05-10T22:18:01.845Z",
+            "modified": "2024-05-10T22:35:47.427Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "month",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "type",
+                    "value": "Practice",
+                    "isPath": false
+                },
+                {
+                    "name": "programme",
+                    "value": "CS EET",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "cb4c4d7e-b8d0-4cfc-8077-5e54849d861e",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "f16bccaa-9c39-4420-9daf-aceaea8692f0",
+            "name": "get quiz",
+            "url": "http://127.0.0.1:8000/api/v1/quiz/65ef634943e2092a8757731f",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-01-09T22:51:21.343Z",
+            "modified": "2024-05-04T17:48:32.329Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJjb2duaXRvOmdyb3VwcyI6WyJzdHVkZW50Il0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsImNvZ25pdG86dXNlcm5hbWUiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiIwYTQwN2NmZS04MTlhLTQ4YTItOWM2OC0zMGVhM2ViZDJhNzgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiYWM0NDQ5MWItMzBjOS00OTFiLWExOWItMGMyNTIxYzU2OTBkIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTQ1ODg2NTAsInBob25lX251bWJlciI6Iis5MTAwMDAwMDAwMDAiLCJleHAiOjE3MTQ5MjY2MzUsImlhdCI6MTcxNDg0MDIzNSwiZmFtaWx5X25hbWUiOiJTdHVkZW50IiwianRpIjoiMWQ3ZDc0YWEtNjRlMC00OWRhLWFiMzQtMDFhYTEzZThkMTk0IiwiZW1haWwiOiJ5ZXNhY2FkdGVjaEBnbWFpbC5jb20ifQ.gzj5tzQniss4DGOmNT3cgppUrTGI4732Ud96tZ7GZzbIrJbWekYN9u8-y_Yenv8MysHC0CSxNXY9qhoaUl9RIooBOx7SFm8li7yOBCBVxuj-eb8qmmOHC8YHdYCVaLK_xYXBxAUF6wA-tdypVT_1sJDwTChXLTOun1HPuKk5rZ09CIX1FYNTbaFG1GSvKzY08HqOuGFUvMslr6N_HoxAeD55dm9B3BQn7P8kEb12e2InWnhG04TL1nHWm3NjsalQHNsigH9YvOIPg5gmGMGQ2KrRA4DMs72qh7OquimlB7_QwQX8oalHMb8u6Kbm0gXKIcOLUBC4tKMRG1ZIPIVaoA"
+            }
+        },
+        {
+            "_id": "5c0c4314-181a-45af-8d85-7e94fcb9298e",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "f16bccaa-9c39-4420-9daf-aceaea8692f0",
+            "name": "update quiz",
+            "url": "http://127.0.0.1:8000/api/v1/quiz/66368feb6f9fb9174be7054d",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-01-09T23:00:24.005Z",
+            "modified": "2024-05-04T19:45:39.027Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"created_at\": \"Sat, 04 May 2024 19:43:39 GMT\",\r\n  \"draft\": false,\r\n  \"end_time\": \"Sat, 11 May 2024 04:53:00 GMT\",\r\n  \"icon\": \"globe\",\r\n  \"name\": \"Test Quiz 1\",\r\n  \"programme\": \"CS EET\",\r\n  \"quiz\": {\r\n    \"Business Communication\": [\r\n      {\r\n        \"answer\": \"Option 2\",\r\n        \"explanation\": null,\r\n        \"options\": [\r\n          \"Option 1\",\r\n          \"Option 2\",\r\n          \"Option 3\",\r\n          \"Option 4\",\r\n          \"Option 5\"\r\n        ],\r\n        \"points\": 1,\r\n        \"question\": \"Question 2\"\r\n      },\r\n      {\r\n        \"answer\": \"c\",\r\n        \"explanation\": \"c is correct\",\r\n        \"options\": [\r\n          \"a\",\r\n          \"b\",\r\n          \"c\",\r\n          \"d\"\r\n        ],\r\n        \"points\": 1,\r\n        \"question\": \"quiz question\"\r\n      },\r\n      {\r\n        \"answer\": \"b\",\r\n        \"explanation\": null,\r\n        \"options\": [\r\n          \"a\",\r\n          \"b\"\r\n        ],\r\n        \"points\": 4,\r\n        \"question\": \"quiz question 2\"\r\n      },\r\n      {\r\n        \"answer\": \"a\",\r\n        \"explanation\": \"a is correct\",\r\n        \"options\": [\r\n          \"a\",\r\n          \"b\"\r\n        ],\r\n        \"points\": 1,\r\n        \"question\": \"quiz question 3\"\r\n      }\r\n    ]\r\n  },\r\n  \"start_time\": \"Sun, 05 May 2024 19:47:00 GMT\",\r\n  \"type\": \"Live\",\r\n  \"updated_at\": \"Sat, 04 May 2024 19:43:39 GMT\"\r\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoicVBCTm9CVjM2WUJlN2YyUzl4Y0RjQSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiI4MzkyZTQyMi00YTlmLTRlMzEtOGQ5MC1hMjIzMzYwNjYyNDIiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzEyNjgxNzMyLCJwaG9uZV9udW1iZXIiOiIrOTE4NDU5MzM5MjI3IiwiZXhwIjoxNzE0OTA4ODYzLCJpYXQiOjE3MTQ4MjI0NjMsImZhbWlseV9uYW1lIjoiU2luZ2Fsa2FyIiwianRpIjoiNTExYzQ4ZTAtNjY3OC00N2RkLTgxZDAtNTZhNmEwYjQ3NDMyIiwiZW1haWwiOiJ5YXNoamFpbjIzMDFAZ21haWwuY29tIn0.M1F7_iObaLYnZfrmtaSTJah7x5NeGQ8xC1yIL2secVX6lQahhHdkbgIqNtgCnLlMXV5WK8RZEZwtsy8pZDHv9P2oKxAMJ4Ck3EiHm0OAVGwtCW2TISeLD7wb3UK_IZZHq0ZF8A1OK33XAvT7d4u-RoiXrnxCQBdSTsHtgrLYWEip9xjCvrsSP5PkNZjFd1MVzvnOoYlnQfE_edyTtEjWJ3HiUJ6bZA-x0QH305_cPOf4hGmn20Ro-7KDUp4SK0tbPychinT1PTGAIfg1H2mYeJPKe0SH_a5eTIQH3FLLjJbkunTtYnDa6bQT2DGNmvbMe6Sn4CRCO4bvS6ObcK3oAQ"
+            }
+        },
+        {
+            "_id": "09d7764c-d9b6-4422-b8be-405d7df2ea35",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "bf6cf915-4ccb-40df-9c4c-6b2e0d496d5b",
+            "name": "signup (student only)",
+            "url": "http://localhost:8000/api/v1/auth/signup",
+            "method": "POST",
+            "sortNum": 82500,
+            "created": "2024-03-01T19:13:56.260Z",
+            "modified": "2024-05-10T16:38:54.651Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"first_name\": \"Demo\",\n  \"last_name\": \"DEMO\",\n  \"email\": \"abcd@gmail.com\",\n  \"phone\": \"0000000001\",\n  \"programme\": \"CS EET\",\n  \"batch\": \"January\",\n  \"yes_academy\": true\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f8ee9151-5428-4dca-add8-28a735be2a3a",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "bf6cf915-4ccb-40df-9c4c-6b2e0d496d5b",
+            "name": "auth (login)",
+            "url": "http://localhost:8000/api/v1/auth",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-02-17T11:54:46.622Z",
+            "modified": "2024-05-10T12:55:06.207Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"code\": \"ac597e8a-6097-42ec-8ebe-5d02407e410e\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "51013fab-10de-4194-87f9-b45b6b915579",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "bf6cf915-4ccb-40df-9c4c-6b2e0d496d5b",
+            "name": "forgot password (student only)",
+            "url": "http://localhost:8000/api/v1/auth/forgot",
+            "method": "POST",
+            "sortNum": 115000,
+            "created": "2024-03-02T21:18:49.742Z",
+            "modified": "2024-03-03T16:51:39.786Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"yesacadtech@gmail.com\",\n  \"code\": \"946753\",\n  \"new_password\": \"YesAT@1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fbf77e76-d176-4ece-8b34-50b2e7bfd2aa",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "bf6cf915-4ccb-40df-9c4c-6b2e0d496d5b",
+            "name": "refresh",
+            "url": "http://127.0.0.1:8000/api/v1/auth/refresh",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-02-20T16:38:12.186Z",
+            "modified": "2024-05-10T16:30:44.990Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJjb2duaXRvOmdyb3VwcyI6WyJzdHVkZW50Il0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsImNvZ25pdG86dXNlcm5hbWUiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiI4MjkyM2ZhZi03YTZjLTRkYWUtODE2OS0xOTE1MzVjNmFjNDAiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiODZjMmUzOGItMDQzOS00ZThhLWE4NDMtNDEwMWQ0OWZiZmQyIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUxOTgwOTMsInBob25lX251bWJlciI6Iis5MTAwMDAwMDAwMDAiLCJleHAiOjE3MTUyODY1NzMsImlhdCI6MTcxNTIwMDE3MywiZmFtaWx5X25hbWUiOiJTdHVkZW50IiwianRpIjoiMGVlODdiM2ItMGMwYy00NDYyLTgyOTUtMDA5OWNhZDRkYTlmIiwiZW1haWwiOiJ5ZXNhY2FkdGVjaEBnbWFpbC5jb20ifQ.kp8DWPqHu2mmO4pLycjibOnqMHiwDQiz39je0EJpGU0jAzUKxmiHetfklDR06H5gpDgjpELLaWZBQu3mHA8jFLpmvJoYA47G02sGtqES_k9jHVmoMuZyDglUDafdLe7FXcBvJXxehCv_GYL2CL94lP4q-kkSZsJKgsyNKDri6jEifhvHU0bpXt7oKJiepbhUQDSCpkQTqz177inkfVWO8hDfCjp8_VfWvEMtpD13GMejMPl9KUxvn4u6PdhtSvwEsq4XwyqbL-tc5kVnTQ0rcMWZ5comFEmvfU02_ZCT4taxhoP2gpfRQnyPfZGTiz8wtm2Rk--59e2TiVWjesib5A"
+            }
+        },
+        {
+            "_id": "c7fbe629-fd18-40a0-b34b-eb5c734a2c0d",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "bf6cf915-4ccb-40df-9c4c-6b2e0d496d5b",
+            "name": "logout",
+            "url": "http://127.0.0.1:8000/api/v1/auth/logout",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-02-20T16:38:04.692Z",
+            "modified": "2024-05-10T16:39:42.569Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJjb2duaXRvOmdyb3VwcyI6WyJzdHVkZW50Il0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsImNvZ25pdG86dXNlcm5hbWUiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiI4MjkyM2ZhZi03YTZjLTRkYWUtODE2OS0xOTE1MzVjNmFjNDAiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiODZjMmUzOGItMDQzOS00ZThhLWE4NDMtNDEwMWQ0OWZiZmQyIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUxOTgwOTMsInBob25lX251bWJlciI6Iis5MTAwMDAwMDAwMDAiLCJleHAiOjE3MTUyODY1NzMsImlhdCI6MTcxNTIwMDE3MywiZmFtaWx5X25hbWUiOiJTdHVkZW50IiwianRpIjoiMGVlODdiM2ItMGMwYy00NDYyLTgyOTUtMDA5OWNhZDRkYTlmIiwiZW1haWwiOiJ5ZXNhY2FkdGVjaEBnbWFpbC5jb20ifQ.kp8DWPqHu2mmO4pLycjibOnqMHiwDQiz39je0EJpGU0jAzUKxmiHetfklDR06H5gpDgjpELLaWZBQu3mHA8jFLpmvJoYA47G02sGtqES_k9jHVmoMuZyDglUDafdLe7FXcBvJXxehCv_GYL2CL94lP4q-kkSZsJKgsyNKDri6jEifhvHU0bpXt7oKJiepbhUQDSCpkQTqz177inkfVWO8hDfCjp8_VfWvEMtpD13GMejMPl9KUxvn4u6PdhtSvwEsq4XwyqbL-tc5kVnTQ0rcMWZ5comFEmvfU02_ZCT4taxhoP2gpfRQnyPfZGTiz8wtm2Rk--59e2TiVWjesib5A"
+            }
+        },
+        {
+            "_id": "3a4988fd-c057-4ee7-aead-ae9bf3335e4e",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "e2c085f9-fe16-45ff-a3e5-2f90ba199c1e",
+            "name": "get upload profile pic url",
+            "url": "http://127.0.0.1:8000/api/v1/teachers/get_presigned_url",
+            "method": "GET",
+            "sortNum": 172500,
+            "created": "2024-05-10T11:53:52.878Z",
+            "modified": "2024-05-10T13:42:35.128Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "fba81d50-522e-4b02-9aeb-770d377d4943",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "98f15451-ce51-4a1a-8619-6b32385f5a8d",
+            "name": "get self profile / get all students",
+            "url": "http://localhost:8000/api/v1/students?programme=CS EET&page=1",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2024-03-02T10:49:14.405Z",
+            "modified": "2024-05-11T00:53:58.538Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "programme",
+                    "value": "CS EET",
+                    "isPath": false
+                },
+                {
+                    "name": "yes_academy",
+                    "value": "false",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "50",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "79c7939f-010d-46e1-8844-fcf212e2cf57",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "98f15451-ce51-4a1a-8619-6b32385f5a8d",
+            "name": "update student profile (student only)",
+            "url": "http://localhost:8000/api/v1/students",
+            "method": "PUT",
+            "sortNum": 230000,
+            "created": "2024-03-02T11:02:42.972Z",
+            "modified": "2024-05-10T16:31:47.373Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"first_name\": \"Yash\",\n  \"yes_academy\": true\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJjb2duaXRvOmdyb3VwcyI6WyJzdHVkZW50Il0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsImNvZ25pdG86dXNlcm5hbWUiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiI4MjkyM2ZhZi03YTZjLTRkYWUtODE2OS0xOTE1MzVjNmFjNDAiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiODZjMmUzOGItMDQzOS00ZThhLWE4NDMtNDEwMWQ0OWZiZmQyIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUxOTgwOTMsInBob25lX251bWJlciI6Iis5MTAwMDAwMDAwMDAiLCJleHAiOjE3MTU0NDUwNDUsImlhdCI6MTcxNTM1ODY0NSwiZmFtaWx5X25hbWUiOiJTdHVkZW50IiwianRpIjoiYjRlMmFlY2YtNDQyMC00M2E0LWFmNGEtNWE2YjViZDNlMDMyIiwiZW1haWwiOiJ5ZXNhY2FkdGVjaEBnbWFpbC5jb20ifQ.QjFSuzNbuv2NFWcE9xZKG6DCdaUBJ_pgfeOI_OV9A6EwvqUrwtrAjPBmG04MRHaZr3KgDkAzlDJ3oRo27O7_U1_lY__w1Z2ZnFjGtZSO0TP9xCUQADxdhhdMPOGQxuYUWnWmeGzuPx7RKo4KG2NFIzOiWBkAFFZlu66Rk2uoFx_a0iDZPBJ5RVyts1XcLx_P8NMrDVc16hU5HyneoLGO-x5sOhVvvoYUAzK3BR_fdt-sM4SIZ_8mugZ0lktKq3On5m_X4rmklfWlSF3fwQBwrPjgAUagl8t3G_2B4FXatdKOMl8dPN9z68H-pHj1tf44PvRHfHABWXpt2pAOqaXpEg"
+            }
+        },
+        {
+            "_id": "dd8f7fce-ea9d-4647-9514-d8b43a2618b6",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "f16bccaa-9c39-4420-9daf-aceaea8692f0",
+            "name": "submit quiz (student only)",
+            "url": "http://127.0.0.1:8000/api/v1/quiz/submit/66368feb6f9fb9174be7054d",
+            "method": "POST",
+            "sortNum": 250000,
+            "created": "2024-03-05T16:52:01.354Z",
+            "modified": "2024-05-04T19:48:39.201Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"response\": {\n    \"Business Communication\": [\n      {\n        \"answer\": \"Option 2\",\n        \"explanation\": null,\n        \"options\": [\n          \"Option 1\",\n          \"Option 2\",\n          \"Option 3\",\n          \"Option 4\",\n          \"Option 5\"\n        ],\n        \"points\": 1,\n        \"question\": \"Question 2\",\n        \"response\": \"Option 2\"\n      },\n      {\n        \"answer\": \"c\",\n        \"explanation\": \"c is correct\",\n        \"options\": [\n          \"a\",\n          \"b\",\n          \"c\",\n          \"d\"\n        ],\n        \"points\": 1,\n        \"question\": \"quiz question\",\n        \"response\": \"b\"\n      },\n      {\n        \"answer\": \"b\",\n        \"explanation\": null,\n        \"options\": [\n          \"a\",\n          \"b\"\n        ],\n        \"points\": 4,\n        \"question\": \"quiz question 2\",\n        \"response\": \"b\"\n      },\n      {\n        \"answer\": \"a\",\n        \"explanation\": \"a is correct\",\n        \"options\": [\n          \"a\",\n          \"b\"\n        ],\n        \"points\": 1,\n        \"question\": \"quiz question 3\",\n        \"response\": \"a\"\n      }\n    ]\n  },\n  \"time_taken\": 20,\n  \"lives_used\": 0\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJjb2duaXRvOmdyb3VwcyI6WyJzdHVkZW50Il0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsImNvZ25pdG86dXNlcm5hbWUiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiIwYTQwN2NmZS04MTlhLTQ4YTItOWM2OC0zMGVhM2ViZDJhNzgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiYWM0NDQ5MWItMzBjOS00OTFiLWExOWItMGMyNTIxYzU2OTBkIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTQ1ODg2NTAsInBob25lX251bWJlciI6Iis5MTAwMDAwMDAwMDAiLCJleHAiOjE3MTQ5MjY2MzUsImlhdCI6MTcxNDg0MDIzNSwiZmFtaWx5X25hbWUiOiJTdHVkZW50IiwianRpIjoiMWQ3ZDc0YWEtNjRlMC00OWRhLWFiMzQtMDFhYTEzZThkMTk0IiwiZW1haWwiOiJ5ZXNhY2FkdGVjaEBnbWFpbC5jb20ifQ.gzj5tzQniss4DGOmNT3cgppUrTGI4732Ud96tZ7GZzbIrJbWekYN9u8-y_Yenv8MysHC0CSxNXY9qhoaUl9RIooBOx7SFm8li7yOBCBVxuj-eb8qmmOHC8YHdYCVaLK_xYXBxAUF6wA-tdypVT_1sJDwTChXLTOun1HPuKk5rZ09CIX1FYNTbaFG1GSvKzY08HqOuGFUvMslr6N_HoxAeD55dm9B3BQn7P8kEb12e2InWnhG04TL1nHWm3NjsalQHNsigH9YvOIPg5gmGMGQ2KrRA4DMs72qh7OquimlB7_QwQX8oalHMb8u6Kbm0gXKIcOLUBC4tKMRG1ZIPIVaoA"
+            }
+        },
+        {
+            "_id": "43fcf980-396d-41e4-bbfe-adfa93ee336c",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "e2c085f9-fe16-45ff-a3e5-2f90ba199c1e",
+            "name": "acknowledge profile pic upload",
+            "url": "http://127.0.0.1:8000/api/v1/teachers/acknowledge/upload/profile_picture?key=profile_pictures/teachers/65d3d3f9c41dcde0b47dd635-20240511002451184203",
+            "method": "GET",
+            "sortNum": 251250,
+            "created": "2024-05-10T18:53:34.153Z",
+            "modified": "2024-05-10T19:16:40.809Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "key",
+                    "value": "profile_pictures/teachers/65d3d3f9c41dcde0b47dd635-20240511002451184203",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "558f1425-15a6-4838-b5b3-cb8c562938c8",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "",
+            "name": "health check",
+            "url": "https://api.yesquiz.in/api/v1",
+            "method": "GET",
+            "sortNum": 260000,
+            "created": "2024-03-10T20:28:35.618Z",
+            "modified": "2024-03-10T21:06:56.968Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "1efc685a-fe2f-4719-995e-c8c039f2bed9",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "c37a6132-1ef1-4c61-b690-a3da3abbb01e",
+            "name": "download sample questions upload sheet",
+            "url": "http://localhost:8000/api/v1/questions/download/sample?programme=CS EET&quiz=true",
+            "method": "GET",
+            "sortNum": 280000,
+            "created": "2024-03-17T15:30:57.218Z",
+            "modified": "2024-05-10T16:41:17.913Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "programme",
+                    "value": "CS EET",
+                    "isPath": false
+                },
+                {
+                    "name": "quiz",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "7c45a26a-00a7-4600-ad03-9365068981e3",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "98f15451-ce51-4a1a-8619-6b32385f5a8d",
+            "name": "get upload profile pic url",
+            "url": "http://localhost:8000/api/v1/students/get_presigned_url",
+            "method": "GET",
+            "sortNum": 285000,
+            "created": "2024-05-10T11:07:23.848Z",
+            "modified": "2024-05-10T13:53:11.503Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJjb2duaXRvOmdyb3VwcyI6WyJzdHVkZW50Il0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsImNvZ25pdG86dXNlcm5hbWUiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiI4MjkyM2ZhZi03YTZjLTRkYWUtODE2OS0xOTE1MzVjNmFjNDAiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiODZjMmUzOGItMDQzOS00ZThhLWE4NDMtNDEwMWQ0OWZiZmQyIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUxOTgwOTMsInBob25lX251bWJlciI6Iis5MTAwMDAwMDAwMDAiLCJleHAiOjE3MTU0MjU4NDIsImlhdCI6MTcxNTMzOTQ0MiwiZmFtaWx5X25hbWUiOiJTdHVkZW50IiwianRpIjoiZTdiZWIwOTYtYjkxYi00ZmQ0LWJjNTUtNDg5YjJjYTExZDk4IiwiZW1haWwiOiJ5ZXNhY2FkdGVjaEBnbWFpbC5jb20ifQ.QG427tLj0JFIEJz6xrXK_zdvtqoYV2igVUHKy7wTX_Gh6qFVcJ8bdDnE308-EwfnLmSbBP9NJvrj0F-yVS8P31pkfacegndR83dcmL_9hPpc1sST3ion-wObuwl1bEUsxmO-xt3NzsuBhmRoHnbKvSlSroKW9jLIPlBQgypirYJj7wa2rNkXfvAJdYfgKaDIEAfzluRaNHEgqxch3ZlMqmmtGSmXu-7dh31qc4PwCNS07v5PgUe70y-33SoTn__c5u1Tj_oRJwLyNvw0qNpBub_ArZZYcwr6P_qj_ra21lwUPd7Zk0GXkHhkBRJ5oU3G_wfrHAtKVLCEhi09zF1TOg"
+            }
+        },
+        {
+            "_id": "5a54e960-76eb-470c-9890-c9e917a8b317",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "c37a6132-1ef1-4c61-b690-a3da3abbb01e",
+            "name": "upload questions",
+            "url": "http://localhost:8000/api/v1/questions/upload",
+            "method": "POST",
+            "sortNum": 290000,
+            "created": "2024-03-17T17:10:31.728Z",
+            "modified": "2024-05-10T16:41:29.606Z",
+            "headers": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "c:\\Users\\yashs\\Desktop\\Internship\\quiz-app-server\\CS_EET.xlsx"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "5fffdf64-3a84-4e47-8037-34cf36c1b22f",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "98f15451-ce51-4a1a-8619-6b32385f5a8d",
+            "name": "acknowledge profile pic upload",
+            "url": "http://127.0.0.1:8000/api/v1/students/acknowledge/upload/profile_picture?key=profile_pictures/students/65e22d031d38d1573da578fb-20240511005307698416",
+            "method": "GET",
+            "sortNum": 298750,
+            "created": "2024-05-10T19:18:44.308Z",
+            "modified": "2024-05-10T19:23:58.970Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "key",
+                    "value": "profile_pictures/students/65e22d031d38d1573da578fb-20240511005307698416",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJjb2duaXRvOmdyb3VwcyI6WyJzdHVkZW50Il0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsImNvZ25pdG86dXNlcm5hbWUiOiIzMWUzMWQxYS1hMDUxLTcwMjMtNWZjYy00ZmQ2Njk4N2UxOWMiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiI4MjkyM2ZhZi03YTZjLTRkYWUtODE2OS0xOTE1MzVjNmFjNDAiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiODZjMmUzOGItMDQzOS00ZThhLWE4NDMtNDEwMWQ0OWZiZmQyIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUxOTgwOTMsInBob25lX251bWJlciI6Iis5MTAwMDAwMDAwMDAiLCJleHAiOjE3MTU0NDUwNDUsImlhdCI6MTcxNTM1ODY0NSwiZmFtaWx5X25hbWUiOiJTdHVkZW50IiwianRpIjoiYjRlMmFlY2YtNDQyMC00M2E0LWFmNGEtNWE2YjViZDNlMDMyIiwiZW1haWwiOiJ5ZXNhY2FkdGVjaEBnbWFpbC5jb20ifQ.QjFSuzNbuv2NFWcE9xZKG6DCdaUBJ_pgfeOI_OV9A6EwvqUrwtrAjPBmG04MRHaZr3KgDkAzlDJ3oRo27O7_U1_lY__w1Z2ZnFjGtZSO0TP9xCUQADxdhhdMPOGQxuYUWnWmeGzuPx7RKo4KG2NFIzOiWBkAFFZlu66Rk2uoFx_a0iDZPBJ5RVyts1XcLx_P8NMrDVc16hU5HyneoLGO-x5sOhVvvoYUAzK3BR_fdt-sM4SIZ_8mugZ0lktKq3On5m_X4rmklfWlSF3fwQBwrPjgAUagl8t3G_2B4FXatdKOMl8dPN9z68H-pHj1tf44PvRHfHABWXpt2pAOqaXpEg"
+            }
+        },
+        {
+            "_id": "38dc4796-3296-4ace-b415-1e5128d2910e",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "c37a6132-1ef1-4c61-b690-a3da3abbb01e",
+            "name": "get questions for quiz",
+            "url": "http://localhost:8000/api/v1/questions/get?programme=CS EET",
+            "method": "POST",
+            "sortNum": 300000,
+            "created": "2024-03-19T20:51:50.950Z",
+            "modified": "2024-05-10T16:41:51.166Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "programme",
+                    "value": "CS EET",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"subjects\": [\n    {\n      \"name\": \"Business Communication\",\n      \"number_of_questions\": 5\n    }\n  ]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "b3e12f0e-4513-4d8b-b027-7f4301386964",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "91cbfde1-0a5c-4f6d-b1ab-37bf74b016e7",
+            "name": "student leaderboard",
+            "url": "http://localhost:8000/api/v1/metrics/students/leaderboard",
+            "method": "GET",
+            "sortNum": 310000,
+            "created": "2024-03-20T18:22:03.172Z",
+            "modified": "2024-05-10T21:27:31.369Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "programme",
+                    "value": "Law Entrance",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "yes_academy",
+                    "value": "false",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "5b365e0f-ed85-4259-8883-8fa089113f11",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "98f15451-ce51-4a1a-8619-6b32385f5a8d",
+            "name": "clear student responses",
+            "url": "http://localhost:8000/api/v1/students/clear?student_ids=663bd5e49702ab0320fb0209",
+            "method": "DELETE",
+            "sortNum": 312500,
+            "created": "2024-05-08T19:41:23.442Z",
+            "modified": "2024-05-08T19:49:51.719Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "student_ids",
+                    "value": "663bd5e49702ab0320fb0209",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiNEw1eTZaMWc0eXdBako0WUJHOHhMdyIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiI4MzkyZTQyMi00YTlmLTRlMzEtOGQ5MC1hMjIzMzYwNjYyNDIiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzEyNjgxNzMyLCJwaG9uZV9udW1iZXIiOiIrOTE4NDU5MzM5MjI3IiwiZXhwIjoxNzE1Mjg0MTM1LCJpYXQiOjE3MTUxOTc3MzUsImZhbWlseV9uYW1lIjoiU2luZ2Fsa2FyIiwianRpIjoiY2ZkOGY3MWMtZWEwYi00MjA2LTk2OTUtYjBiNTk0Mzg3MzdlIiwiZW1haWwiOiJ5YXNoamFpbjIzMDFAZ21haWwuY29tIn0.jl5X3zJRbkPKfWhXKWgbZMBycRxKq73aASSQXaztgzL0AlQYjvnU6OpUTk0znzAoZtxMRqWZdtZtptFFSJhPl6QK-_3FhUeGYLjzcMUvniEE00ntfIMJFyl31fgepIlMmnYa6JjnoJwM8aoVUqlQy1GfJrRCiyXxJXFggG-BdBLfQaDVQ9ddZjW9JKc8lO1qnOfb0gTgKtDwYwTmKzoeZSGLnvb1mhhhdWDed87IlAyLDaN5Q0EvafzLJMekNXpI_H76rX30I_Qu0J53LiURE3808eveenhjm9rEOxeTzMu6aXNdfFYEkl19JN5x2Qa2uo1FEYqlKTGXSUSVVp2ggg"
+            }
+        },
+        {
+            "_id": "7560b90d-fec2-4453-b0ca-1ec9806bb675",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "c37a6132-1ef1-4c61-b690-a3da3abbb01e",
+            "name": "delete questions",
+            "url": "http://localhost:8000/api/v1/questions?question=6636607c00f8a644df694f23&question=6636607c00f8a644df694f22",
+            "method": "DELETE",
+            "sortNum": 320000,
+            "created": "2024-05-04T20:05:49.462Z",
+            "modified": "2024-05-04T20:38:50.267Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "question",
+                    "value": "6636607c00f8a644df694f23",
+                    "isPath": false
+                },
+                {
+                    "name": "question",
+                    "value": "6636607c00f8a644df694f22",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoicVBCTm9CVjM2WUJlN2YyUzl4Y0RjQSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiI4MzkyZTQyMi00YTlmLTRlMzEtOGQ5MC1hMjIzMzYwNjYyNDIiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzEyNjgxNzMyLCJwaG9uZV9udW1iZXIiOiIrOTE4NDU5MzM5MjI3IiwiZXhwIjoxNzE0OTA4ODYzLCJpYXQiOjE3MTQ4MjI0NjMsImZhbWlseV9uYW1lIjoiU2luZ2Fsa2FyIiwianRpIjoiNTExYzQ4ZTAtNjY3OC00N2RkLTgxZDAtNTZhNmEwYjQ3NDMyIiwiZW1haWwiOiJ5YXNoamFpbjIzMDFAZ21haWwuY29tIn0.M1F7_iObaLYnZfrmtaSTJah7x5NeGQ8xC1yIL2secVX6lQahhHdkbgIqNtgCnLlMXV5WK8RZEZwtsy8pZDHv9P2oKxAMJ4Ck3EiHm0OAVGwtCW2TISeLD7wb3UK_IZZHq0ZF8A1OK33XAvT7d4u-RoiXrnxCQBdSTsHtgrLYWEip9xjCvrsSP5PkNZjFd1MVzvnOoYlnQfE_edyTtEjWJ3HiUJ6bZA-x0QH305_cPOf4hGmn20Ro-7KDUp4SK0tbPychinT1PTGAIfg1H2mYeJPKe0SH_a5eTIQH3FLLjJbkunTtYnDa6bQT2DGNmvbMe6Sn4CRCO4bvS6ObcK3oAQ"
+            }
+        },
+        {
+            "_id": "25970db7-9196-45a5-9032-07524e599141",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "98f15451-ce51-4a1a-8619-6b32385f5a8d",
+            "name": "clear all student responses",
+            "url": "http://localhost:8000/api/v1/students/clear/all",
+            "method": "DELETE",
+            "sortNum": 326250,
+            "created": "2024-05-08T19:41:45.151Z",
+            "modified": "2024-05-08T19:42:28.093Z",
+            "headers": []
+        },
+        {
+            "_id": "a5f02751-ae27-4507-a896-3c471948e4fb",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "e2c085f9-fe16-45ff-a3e5-2f90ba199c1e",
+            "name": "delete teacher (only admin)",
+            "url": "http://127.0.0.1:8000/api/v1/teachers/663e673d5803c3c39fd807d1",
+            "method": "DELETE",
+            "sortNum": 330000,
+            "created": "2024-05-05T16:51:10.780Z",
+            "modified": "2024-05-10T18:35:07.753Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "40ca56e2-17b6-4f16-8c19-70bfc4b4fe15",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "98f15451-ce51-4a1a-8619-6b32385f5a8d",
+            "name": "delete student",
+            "url": "http://localhost:8000/api/v1/students/65effc3743e2092a87577320",
+            "method": "DELETE",
+            "sortNum": 340000,
+            "created": "2024-05-06T12:54:03.296Z",
+            "modified": "2024-05-11T08:48:47.886Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "aa3f95aa-981a-4d62-91db-8865949e4286",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "f16bccaa-9c39-4420-9daf-aceaea8692f0",
+            "name": "clear quiz responses",
+            "url": "http://127.0.0.1:8000/api/v1/quiz/clear?quiz_ids=66368feb6f9fb9174be7054d",
+            "method": "DELETE",
+            "sortNum": 380000,
+            "created": "2024-05-08T19:55:41.844Z",
+            "modified": "2024-05-08T19:57:14.516Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "quiz_ids",
+                    "value": "66368feb6f9fb9174be7054d",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiNEw1eTZaMWc0eXdBako0WUJHOHhMdyIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiI4MzkyZTQyMi00YTlmLTRlMzEtOGQ5MC1hMjIzMzYwNjYyNDIiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzEyNjgxNzMyLCJwaG9uZV9udW1iZXIiOiIrOTE4NDU5MzM5MjI3IiwiZXhwIjoxNzE1Mjg0MTM1LCJpYXQiOjE3MTUxOTc3MzUsImZhbWlseV9uYW1lIjoiU2luZ2Fsa2FyIiwianRpIjoiY2ZkOGY3MWMtZWEwYi00MjA2LTk2OTUtYjBiNTk0Mzg3MzdlIiwiZW1haWwiOiJ5YXNoamFpbjIzMDFAZ21haWwuY29tIn0.jl5X3zJRbkPKfWhXKWgbZMBycRxKq73aASSQXaztgzL0AlQYjvnU6OpUTk0znzAoZtxMRqWZdtZtptFFSJhPl6QK-_3FhUeGYLjzcMUvniEE00ntfIMJFyl31fgepIlMmnYa6JjnoJwM8aoVUqlQy1GfJrRCiyXxJXFggG-BdBLfQaDVQ9ddZjW9JKc8lO1qnOfb0gTgKtDwYwTmKzoeZSGLnvb1mhhhdWDed87IlAyLDaN5Q0EvafzLJMekNXpI_H76rX30I_Qu0J53LiURE3808eveenhjm9rEOxeTzMu6aXNdfFYEkl19JN5x2Qa2uo1FEYqlKTGXSUSVVp2ggg"
+            }
+        },
+        {
+            "_id": "76ef3f31-66ca-4c6c-8e92-fd76450d996c",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "f16bccaa-9c39-4420-9daf-aceaea8692f0",
+            "name": "clear all quiz responses",
+            "url": "http://127.0.0.1:8000/api/v1/quiz/clear/all",
+            "method": "DELETE",
+            "sortNum": 390000,
+            "created": "2024-05-08T19:56:05.947Z",
+            "modified": "2024-05-08T19:56:24.222Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiNEw1eTZaMWc0eXdBako0WUJHOHhMdyIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiI4MzkyZTQyMi00YTlmLTRlMzEtOGQ5MC1hMjIzMzYwNjYyNDIiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzEyNjgxNzMyLCJwaG9uZV9udW1iZXIiOiIrOTE4NDU5MzM5MjI3IiwiZXhwIjoxNzE1Mjg0MTM1LCJpYXQiOjE3MTUxOTc3MzUsImZhbWlseV9uYW1lIjoiU2luZ2Fsa2FyIiwianRpIjoiY2ZkOGY3MWMtZWEwYi00MjA2LTk2OTUtYjBiNTk0Mzg3MzdlIiwiZW1haWwiOiJ5YXNoamFpbjIzMDFAZ21haWwuY29tIn0.jl5X3zJRbkPKfWhXKWgbZMBycRxKq73aASSQXaztgzL0AlQYjvnU6OpUTk0znzAoZtxMRqWZdtZtptFFSJhPl6QK-_3FhUeGYLjzcMUvniEE00ntfIMJFyl31fgepIlMmnYa6JjnoJwM8aoVUqlQy1GfJrRCiyXxJXFggG-BdBLfQaDVQ9ddZjW9JKc8lO1qnOfb0gTgKtDwYwTmKzoeZSGLnvb1mhhhdWDed87IlAyLDaN5Q0EvafzLJMekNXpI_H76rX30I_Qu0J53LiURE3808eveenhjm9rEOxeTzMu6aXNdfFYEkl19JN5x2Qa2uo1FEYqlKTGXSUSVVp2ggg"
+            }
+        },
+        {
+            "_id": "025ee62e-a75f-43fd-9164-4f6027087a3d",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "f16bccaa-9c39-4420-9daf-aceaea8692f0",
+            "name": "delete quiz",
+            "url": "http://127.0.0.1:8000/api/v1/quiz/66368feb6f9fb9174be7054d",
+            "method": "DELETE",
+            "sortNum": 400000,
+            "created": "2024-05-08T19:53:36.419Z",
+            "modified": "2024-05-08T19:53:59.074Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiNEw1eTZaMWc0eXdBako0WUJHOHhMdyIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiI4MzkyZTQyMi00YTlmLTRlMzEtOGQ5MC1hMjIzMzYwNjYyNDIiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzEyNjgxNzMyLCJwaG9uZV9udW1iZXIiOiIrOTE4NDU5MzM5MjI3IiwiZXhwIjoxNzE1Mjg0MTM1LCJpYXQiOjE3MTUxOTc3MzUsImZhbWlseV9uYW1lIjoiU2luZ2Fsa2FyIiwianRpIjoiY2ZkOGY3MWMtZWEwYi00MjA2LTk2OTUtYjBiNTk0Mzg3MzdlIiwiZW1haWwiOiJ5YXNoamFpbjIzMDFAZ21haWwuY29tIn0.jl5X3zJRbkPKfWhXKWgbZMBycRxKq73aASSQXaztgzL0AlQYjvnU6OpUTk0znzAoZtxMRqWZdtZtptFFSJhPl6QK-_3FhUeGYLjzcMUvniEE00ntfIMJFyl31fgepIlMmnYa6JjnoJwM8aoVUqlQy1GfJrRCiyXxJXFggG-BdBLfQaDVQ9ddZjW9JKc8lO1qnOfb0gTgKtDwYwTmKzoeZSGLnvb1mhhhdWDed87IlAyLDaN5Q0EvafzLJMekNXpI_H76rX30I_Qu0J53LiURE3808eveenhjm9rEOxeTzMu6aXNdfFYEkl19JN5x2Qa2uo1FEYqlKTGXSUSVVp2ggg"
+            }
+        },
+        {
+            "_id": "612e53e8-6adc-4c0e-97a6-d663ec8b83d8",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "",
+            "name": "upload profile pic",
+            "url": "https://yes-quiz.s3.amazonaws.com/",
+            "method": "POST",
+            "sortNum": 400000,
+            "created": "2024-05-10T11:06:17.642Z",
+            "modified": "2024-05-10T19:23:44.775Z",
+            "headers": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "key",
+                        "value": "profile_pictures/students/65e22d031d38d1573da578fb-20240511005307698416"
+                    },
+                    {
+                        "name": "policy",
+                        "value": "eyJleHBpcmF0aW9uIjogIjIwMjQtMDUtMTBUMjA6MjM6MDdaIiwgImNvbmRpdGlvbnMiOiBbeyJidWNrZXQiOiAieWVzLXF1aXoifSwgeyJrZXkiOiAicHJvZmlsZV9waWN0dXJlcy9zdHVkZW50cy82NWUyMmQwMzFkMzhkMTU3M2RhNTc4ZmItMjAyNDA1MTEwMDUzMDc2OTg0MTYifSwgeyJ4LWFtei1hbGdvcml0aG0iOiAiQVdTNC1ITUFDLVNIQTI1NiJ9LCB7IngtYW16LWNyZWRlbnRpYWwiOiAiQUtJQTZKVEZPTEZHM1dIQlVQTEsvMjAyNDA1MTAvYXAtc291dGgtMS9zMy9hd3M0X3JlcXVlc3QifSwgeyJ4LWFtei1kYXRlIjogIjIwMjQwNTEwVDE5MjMwN1oifV19"
+                    },
+                    {
+                        "name": "x-amz-algorithm",
+                        "value": "AWS4-HMAC-SHA256"
+                    },
+                    {
+                        "name": "x-amz-credential",
+                        "value": "AKIA6JTFOLFG3WHBUPLK/20240510/ap-south-1/s3/aws4_request"
+                    },
+                    {
+                        "name": "x-amz-date",
+                        "value": "20240510T192307Z"
+                    },
+                    {
+                        "name": "x-amz-signature",
+                        "value": "34c91d57d85cde5b908887640d218abd2da693931bc3c5420aed6337e56d7439"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "c:\\Users\\yashs\\Desktop\\default.png"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "7346ef56-8e66-43cf-b550-fa96a62da7dc",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "91cbfde1-0a5c-4f6d-b1ab-37bf74b016e7",
+            "name": "get counts",
+            "url": "http://localhost:8000/api/v1/metrics/students/count?group=programme",
+            "method": "GET",
+            "sortNum": 440000,
+            "created": "2024-05-10T22:46:17.756Z",
+            "modified": "2024-05-10T22:59:48.712Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "group",
+                    "value": "programme",
+                    "isPath": false
+                },
+                {
+                    "name": "group",
+                    "value": "institution",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "6d2555c8-dad9-43e4-9849-7c5ef260af4b",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "91cbfde1-0a5c-4f6d-b1ab-37bf74b016e7",
+            "name": "performance comparison",
+            "url": "http://localhost:8000/api/v1/metrics/students/performance/comparison",
+            "method": "GET",
+            "sortNum": 450000,
+            "created": "2024-05-10T23:24:18.393Z",
+            "modified": "2024-05-10T23:28:47.032Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "group",
+                    "value": "programme",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "56928dae-01f5-4ca8-9cec-19fa15fbfc62",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "91cbfde1-0a5c-4f6d-b1ab-37bf74b016e7",
+            "name": "get last n quiz performance",
+            "url": "http://localhost:8000/api/v1/metrics/students/performance/quiz?n=5",
+            "method": "GET",
+            "sortNum": 460000,
+            "created": "2024-05-11T01:37:17.610Z",
+            "modified": "2024-05-11T01:46:15.671Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "n",
+                    "value": "5",
+                    "isPath": false
+                },
+                {
+                    "name": "type",
+                    "value": "Live",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "programme",
+                    "value": "CS EET",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        },
+        {
+            "_id": "044abda2-a107-42a2-8b4e-4e65785395aa",
+            "colId": "5fe0fe15-ee78-4e1f-b108-d7f0ba163388",
+            "containerId": "91cbfde1-0a5c-4f6d-b1ab-37bf74b016e7",
+            "name": "get subject wise performance",
+            "url": "http://localhost:8000/api/v1/metrics/students/performance/subjects?programme=CS EET",
+            "method": "GET",
+            "sortNum": 470000,
+            "created": "2024-05-11T02:07:40.367Z",
+            "modified": "2024-05-11T02:15:51.922Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "programme",
+                    "value": "CS EET",
+                    "isPath": false
+                },
+                {
+                    "name": "yes_academy",
+                    "value": "true",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJraWQiOiJJS1J1OXVBMnliTWhJZVJsN1hMTnVENkVFV0o1QVU2VEJ2ZEpcL0JwaEcwMD0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVllqZjFkeGVVYUxuNVpXQzlEWTdiUSIsInN1YiI6ImQxZDNiZDdhLTEwMDEtNzBhNi0xZDJjLWFlNDdjNzFiZDdlMCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX1k0TlRIWW1YciIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsImNvZ25pdG86dXNlcm5hbWUiOiJkMWQzYmQ3YS0xMDAxLTcwYTYtMWQyYy1hZTQ3YzcxYmQ3ZTAiLCJnaXZlbl9uYW1lIjoiWWFzaCIsIm9yaWdpbl9qdGkiOiJjZGY4Yjc3Ni03NzM5LTQ5YWYtOGExNi00OTNjZGU4ZDk2NDgiLCJhdWQiOiIyZGc4cGhpZmQ2a3BtdmI3cDVrNWNodGI5dSIsImV2ZW50X2lkIjoiM2Q0MTcxNjgtODIxYS00NzZlLWJkYzYtNGFlNmM1MGE2YjJlIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTUzNDU3MDYsInBob25lX251bWJlciI6Iis5MTg0NTkzMzkyMjciLCJleHAiOjE3MTU0MzIxMDYsImlhdCI6MTcxNTM0NTcwNiwiZmFtaWx5X25hbWUiOiJTaW5nYWxrYXIiLCJqdGkiOiJkYzMwZGUzYi0wM2M4LTRjYTMtYmU0Ny0zOWUyNjQyZmY5NGYiLCJlbWFpbCI6Inlhc2hqYWluMjMwMUBnbWFpbC5jb20ifQ.vWntYsja6-lgEYysI-CWuUKWt7wRQitx52sZlLfduXfUWKEVQ5GDPJ_XSrjL1x--rQOtX8vZTZqVaOVHH8YVSKPTNKqK6rKb2yjk8KkSr_owW1WCRQZmqxM-Yzocq1kkgQfVVPXMpFTkMVOuoCachrzXAE3nURGyJjgwWn-irYjfJRBZrITNom2t_NNfDkoZC4oVPAAfqaJJ7oHS35lQ6CmmKUhcNK-fIjEz1Sb5-Ra2xno6L7vyvxbRWAgbZN3_f75QSM3VMA7P_XqAcHjeq4EScfFUl3FIU7b1dEtufy2gMzj2X5c8mf1U5W493KrLyhsoyZwhPrDMq-GDS6nnZg"
+            }
+        }
+    ],
+    "ref": "hSFUHCDpr9ubdHViH6COYMSq8j6i_1qrOhcWEMtIyHsxJEw0ZhSbj_ROOHRNX9KeBxxp-s9S8C7cOsPvJF3RzA"
+}
